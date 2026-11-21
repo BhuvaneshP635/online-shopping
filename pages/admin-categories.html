@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Categories</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Manage Categories</h1>
+        <a href="admin-dashboard.html">Back to Admin</a>
+    </header>
+
+    <main class="container">
+        <h2>Add / Edit Category</h2>
+
+        <form id="categoryForm">
+            <input type="hidden" id="categoryId">
+
+            <label for="categoryName">Category Name</label>
+            <input type="text" id="categoryName" required>
+
+            <label for="categoryDescription">Description</label>
+            <textarea id="categoryDescription" required></textarea>
+
+            <button type="submit" id="saveButton">Add Category</button>
+            <button type="button" id="clearButton">Clear</button>
+        </form>
+
+        <h2>Category List</h2>
+        <div id="categoryList"></div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/firebase-config.js"></script>
+    <script src="../assets/js/admin-categories.js"></script>
+
+</body>
+</html>

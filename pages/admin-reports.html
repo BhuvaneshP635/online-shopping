@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Reports - ShopEase</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+</head>
+<body>
+
+    <header class="product-header">
+        <h1>ShopEase Admin</h1>
+        <div>
+            <a href="admin-dashboard.html">Dashboard</a>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </header>
+
+    <main class="catalogue">
+        <h2>Admin Reports</h2>
+        <p id="message">Loading reports...</p>
+
+        <section class="dashboard-grid">
+            <div class="catalogue-card">
+                <h3>Total Sales</h3>
+                <h2 id="totalSales">₹0</h2>
+            </div>
+
+            <div class="catalogue-card">
+                <h3>Total Orders</h3>
+                <h2 id="totalOrders">0</h2>
+            </div>
+
+            <div class="catalogue-card">
+                <h3>Cash Orders</h3>
+                <h2 id="cashOrders">0</h2>
+            </div>
+
+            <div class="catalogue-card">
+                <h3>Credit Orders</h3>
+                <h2 id="creditOrders">0</h2>
+            </div>
+
+            <div class="catalogue-card">
+                <h3>Total Customers</h3>
+                <h2 id="totalCustomers">0</h2>
+            </div>
+
+            <div class="catalogue-card">
+                <h3>Total Products</h3>
+                <h2 id="totalProducts">0</h2>
+            </div>
+        </section>
+
+        <h2>Top 10 Customers</h2>
+        <div id="topCustomers"></div>
+
+        <h2>Inventory Report</h2>
+        <div id="inventoryReport"></div>
+
+        <h2>Top 10 Selling Products</h2>
+        <div id="topProducts"></div>
+
+        <h2>Bottom 10 Selling Products</h2>
+        <div id="bottomProducts"></div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/firebase-config.js"></script>
+    <script src="../assets/js/admin-reports.js"></script>
+
+</body>
+</html>

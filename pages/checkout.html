@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ShopEase</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+</head>
+<body>
+
+    <header class="product-header">
+        <h1>ShopEase</h1>
+        <div>
+            <a href="cart.html">Back to Cart</a>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </header>
+
+    <main class="catalogue">
+        <h2>Checkout</h2>
+
+        <form id="checkoutForm">
+
+            <h3>Delivery Details</h3>
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" rows="4" required></textarea>
+
+            <h3>Order Summary</h3>
+            <div id="checkoutItems"></div>
+            <h3 id="checkoutTotal">Total: ₹0</h3>
+
+            <h3>Payment Method</h3>
+
+            <label>
+                <input type="radio" name="paymentMethod" value="cash" checked>
+                Cash on Delivery
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="paymentMethod" value="credit">
+                Pay using Credit
+            </label>
+
+            <p id="creditInfo"></p>
+
+            <p id="message"></p>
+
+            <button type="submit" id="placeOrderButton">
+                Place Order
+            </button>
+
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/firebase-config.js"></script>
+    <script src="../assets/js/checkout.js"></script>
+
+</body>
+</html>

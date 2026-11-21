@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - ShopEase</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+</head>
+<body>
+
+    <header class="product-header">
+        <h1>ShopEase</h1>
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </header>
+
+    <main class="catalogue">
+        <h2>My Profile</h2>
+        <p id="message">Loading profile...</p>
+
+        <div class="catalogue-card">
+            <p><strong>Name:</strong> <span id="profileName"></span></p>
+            <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+            <p><strong>Account ID:</strong> <span id="profileId"></span></p>
+            <p><strong>Account Role:</strong> <span id="profileRole"></span></p>
+            <p><strong>Account Status:</strong> <span id="profileStatus"></span></p>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/firebase-config.js"></script>
+    <script src="../assets/js/profile.js"></script>
+
+</body>
+</html>
