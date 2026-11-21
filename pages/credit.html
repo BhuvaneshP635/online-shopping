@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Information - ShopEase</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+</head>
+<body>
+
+    <header class="product-header">
+        <h1>ShopEase</h1>
+        <div>
+            <a href="dashboard.html">Dashboard</a>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </header>
+
+    <main class="catalogue">
+        <h2>My Credit Information</h2>
+        <p id="message">Loading credit information...</p>
+
+        <div class="catalogue-card">
+            <h3>Credit Limit</h3>
+            <h2 id="creditLimit">₹0</h2>
+
+            <h3>Credit Used</h3>
+            <h2 id="creditUsed">₹0</h2>
+
+            <h3>Available Credit</h3>
+            <h2 id="availableCredit">₹0</h2>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/firebase-config.js"></script>
+    <script src="../assets/js/credit.js"></script>
+
+</body>
+</html>

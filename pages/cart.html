@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopEase</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+</head>
+<body>
+
+    <header class="product-header">
+        <h1>ShopEase</h1>
+        <div>
+            <a href="products.html">Continue Shopping</a>
+            <a href="dashboard.html">Dashboard</a>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </header>
+
+    <main class="catalogue">
+        <h2>My Shopping Cart</h2>
+
+        <p id="message"></p>
+
+        <div id="cartContainer"></div>
+
+        <h3 id="cartTotal">Total: ₹0</h3>
+
+        <button id="clearCartButton">Clear Cart</button>
+        <button id="checkoutButton">Proceed to Checkout</button>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/cart.js"></script>
+
+</body>
+</html>

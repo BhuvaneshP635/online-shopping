@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - ShopEase</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <h1>ShopEase Admin Dashboard</h1>
+
+    <div style="text-align:center; margin-top:30px;">
+        <h2>Administration Panel</h2>
+
+        <p>Welcome, Administrator!</p>
+
+       
+        <div class="dashboard-grid">
+
+    <div class="catalogue-card">
+        <h3>Manage Products</h3>
+        <a href="admin-products.html">
+            <button>Manage Products</button>
+        </a>
+    </div>
+
+    <div class="catalogue-card">
+        <h3>Manage Categories</h3>
+        <a href="admin-categories.html">
+            <button>Manage Categories</button>
+        </a>
+    </div>
+
+    <div class="catalogue-card">
+        <h3>Manage Customers</h3>
+        <a href="admin-customers.html">
+            <button>Manage Customers</button>
+        </a>
+    </div>
+
+    <div class="catalogue-card">
+        <h3>View Reports</h3>
+        <a href="admin-reports.html">
+            <button>View Reports</button>
+        </a>
+    </div>
+
+</div>
+
+        <button id="logoutButton">Logout</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../assets/js/firebase-config.js"></script>
+<script src="../assets/js/admin-dashboard.js"></script>
+
+</body>
+</html>
